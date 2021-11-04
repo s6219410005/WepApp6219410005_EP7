@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .box {
+            background-color: burlywood;
+            
+            text-align: center;
+            padding: 50px;
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-size: 25px;
+        }
+        button{
+            width: 250px;
+            height: 100px;
+        }
+        body {
+            text-align: center;
+            background-color: yellow;
+        }
+        #calBMI{
+            width: 250px;
+            height: 50px;
+            background-color:yellow;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            box-shadow: -9px -9px 16px rgb(255 255 255 / 80%), 9px 9px 16px rgb(216 221 228 / 80%);
+            font-size: 25px;
+        }
+        #calBMI:hover {
+            background-color: #9AB3F5;
+        }
+        #weight{
+            border: 0;
+            border-bottom: outset;
+            background-color:burlywood ;
+        }
+        #height{
+            border: 0;
+            border-bottom: outset;
+            background-color:burlywood ;
+        }
+        
+    </style>
 </head>
+
 <body>
-    <h1>BMI Calculor</h1>
-    <hr>
-    น้ำหนักตัว(kg.)
-    <br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง (Cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวณ</button>
-    <br>
-    BMI
-    <br>
-    <span id="bmiValue">0</span> 
-    <br><br>
-    <span id="bmiResult">การแปลผล BMI</span> 
+    <div class="box">
+        <h1>BMI Calculor</h1>
+        <hr size="10" width="100%" color="#3e1404">
+        น้ำหนักตัว(kg.)
+        <br><br><br>
+        <input type="number" name="" id="weight">
+        <br><br><br>
+        ส่วนสูง (Cm.)
+        <br><br>
+        <input type="number" name="" id="height">
+        <br><br><br>
+        <button id="calBMI">คำนวณ</button>
+        <br><br>
+        BMI
+        <br>
+        <span id="bmiValue">0</span>
+        <br><br>
+        <span id="bmiResult">การแปลผล BMI</span>
+        <br><br>
+
+        SAU IOT DTI
+        <hr size="10" width="100%" color="#3e1404">
+    </div>
+
 
 
     <script src="./js/script12.js"></script>
 </body>
+
 </html>
